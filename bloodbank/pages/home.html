@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+</head>
+
+<!-- <body onload="acceptors();donor();bloodInfo()"> -->
+
+<body onload="UserDetails() ">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Blood Bank Application</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color:#EFF1F3;">
+        <div class="container">
+            <br><br><br><br>
+            <h1 id="h1  ">Donor List</h1> <br><br>
+            <div>
+                <table class="table table-hover" id="data">
+                    <thead>
+                        <tr>
+                          <th>ID</th>
+                          <!-- <th>Image</th> -->
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Blood Group</th>
+                          <th>Donor</th>
+                          <th>cat</th>
+
+                        </tr>
+                        </thead>
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase.js"></script>
+    <script src="../js/home.js"></script>
+
+</body>
+
+</html>

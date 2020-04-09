@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <br>
+    <div class="col-md-6 off-md-3" id="pg1">
+        <div class="container-flux header">
+            <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 text-center">
+                <h2>Signup</h2> <br><br>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <!-- <label>Full Name</label> -->
+            <input type="text" id="fname" class="form-control" placeholder="Enter a full Name">
+            <div class="col=md-8 error" id="errorfname"></div>
+        </div>
+        <div class="form-group">
+            <!-- <label>Email</label> -->
+            <input type="email" id="email" class="form-control" placeholder="Enter a email">
+            <div class="col=md-8 error" id="erroremail"></div>
+        </div>
+        <div class="form-group">
+            <!-- <label>DOB</label> -->
+            <input type="date" id="date" class="form-control">
+            <div class="col=md-12 error" id="errordate"></div>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input id="address" type="text" class="form-control" name="address" placeholder="Address">
+            </div>
+            <br> <br>            
+            <div class="form-inline">
+                <div class="input-group customDrop">
+                    <select class="form-control" id="usertype">
+                        <option value="doner">Doner</option>
+                        <option value="acceptor">Acceptor</option>
+                    </select>
+                </div>
+                <div class="input-group customDrop">
+                    <select name=""  class="form-control" id="bloodtype">
+                        <option >Blood Type</option>
+                        <option value="A+" >A+</option>
+                        <option value="B+">B+</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="input-group">
+                <label>Gender: </label>
+                <label class="radio-inline">
+                    <input type="radio" name="radioOption" id="inlineRadio2" value="male"> Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="radioOption" id="inlineRadio3" value="female"> Female
+                </label>
+            </div>
+            </div>
+             <div class="form-group">
+                <input type="file" id="file" class="form-control" >
+            </div>
+           
+            
+            
+            
+            
+            
+            
+            <div class="form-group">
+                <!-- <label>Password</label> -->
+                <input type="password" id="password" class="form-control" onkeyup='check()' placeholder="Password">
+                <div class="col=md-12 error" id="errorpassword"></div>
+            </div>
+            <div class="form-group">
+                <!-- <label>Confirm Password</label> -->
+                <input type="password" id="cpassword" class="form-control" onkeyup='check();' placeholder="Confirm Password">
+                <div class="col=md-12 error" id="errorcpassword"></div>
+            </div>
+            <div>
+                <strong>
+                    <div class="col=md-12 error" id="error1"></div>
+                </strong>
+                <button class="btn btn-primary header" type="submit" id="signUp" onclick="signupVal();signup()">Signup</button>
+                <br> <br>
+            </div>
+
+
+
+
+
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+            <script src="../js/signup.js"></script>
+</body>
+
+</html>
+
+

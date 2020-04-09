@@ -1,0 +1,50 @@
+body{
+    margin: 0px ;
+    padding: 0px ;
+    font-family: Arial, Helvetica, sans-serif ;
+    /* background-image: url('../images/images.png'); */
+    background-repeat: no-repeat ;
+    /* background-size: 150% ; */
+    background-color: rgb(172, 160, 159) ;
+}
+
+.header{
+    /* background-color:#ff0006 ; */
+    color: white ;
+}
+
+.header h2{
+    display: inline;
+    padding: 6px ;
+    text-shadow: 0px 2px 3px grey ;
+    letter-spacing: 2px 
+}
+.header button{
+    float: right;
+}
+
+.error{
+    font-size: 12px ;
+    transition: 2s ;
+    color: red ;
+    position: absolute ;
+}
+#pg1{
+    margin: auto ;
+    border-radius: 8%;
+    /* border: 2px none rebeccapurple ; */
+    background-color: rgb(219, 213, 213) ; 
+    padding: 14px  25px ;
+    /* box-shadow: 0px 2px 3px whitesmoke ; */
+
+}
+.btn {
+    float: right;
+    font-weight: bold ;
+    letter-spacing: 1px ;
+}
+@media only screen and (max-width: 600px) {
+    #pg1{
+        border-radius: 0% ;
+    }
+}

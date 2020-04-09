@@ -1,0 +1,27 @@
+body{
+    margin: 0px ;
+    padding: 0px ;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    border: none ;
+    color:#FFFFFF !important; 
+    background-color: #df4143;
+}
+.navbar-header{
+    display: inline-flex;
+}
+.nav  li a  {
+    color: rgb(255, 255, 255) !important;
+    float: right ;
+}
+
+.container-fluid ul{
+    float: right;
+}

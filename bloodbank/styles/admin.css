@@ -1,0 +1,85 @@
+body{
+    margin: 0px ;
+    padding: 0px ;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-image: url("../images/admin.jpg") ;
+    background-repeat: no-repeat ;
+    /* background-size: 100% ;  */
+    background-size: auto ;
+}
+.container-flux{
+    margin: auto ;
+}
+.col-md-4{
+    padding: 32px 35px ;
+    margin: auto ;
+    margin: 0;
+    position: absolute ;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.938) ;
+}
+
+h3{
+    font-family: 'Unlock', cursive;
+    color: rgb(219, 214, 214) ; 
+    text-align: center ;
+}
+
+.btn{
+    letter-spacing: 2px ;
+    /* background-color: forestgreen; */
+    width: 100%;
+}
+.button{
+    float: right;
+    padding: 1px ;
+}
+.keep label{
+    color: rgb(150, 146, 146) ;
+}
+.keep a{
+    /* letter-spacing: 2px ; */
+    color: forestgreen ;
+    float: right;
+    font-size: 14px ;
+    margin:-15px 4px px  ;
+}
+    .keep a:hover{
+    text-decoration: none;
+    }
+.term a{
+        color: rgb(0, 0, 0) ;
+        /* font-weight: bolder ; */
+        word-spacing: 3px ;
+        bottom: 0px ;
+    }
+    .term a:hover{
+        text-decoration: none;
+    }
+    .error{
+        font-size: 13px ;
+        transition: 2s ;
+        color: red ;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .keep{
+            margin: -3px 4px ;
+            font-size: 13px ;
+        }
+        .keep a {
+            font-size: 13px ;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .keep{
+            margin: -3px 4px ;
+            font-size: 13px ;
+        }
+        .keep a {
+            font-size: 13px ;
+        }
+    }
