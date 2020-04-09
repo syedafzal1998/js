@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="h1">DISCO LIGHT</h1>
+
+
+    <script>
+        
+        var color=['red','green','blue','darkpink','darkorange'];
+        
+        
+ for(var i =0 ; i<color.length ; i++){
+
+if(i == 0){
+    setInterval(
+        ()=>{
+            console.log('agaya 1')
+            document.getElementById('h1').style.color=color[0]
+        }
+        ,1000
+    )
+}
+
+else if(i == 1){
+    setInterval(
+        ()=>{
+            console.log('agaya 2')
+            document.getElementById('h1').style.color=color[1]
+        }
+        ,1200
+    )
+}
+
+else if(i == 2){
+    setInterval(
+        ()=>{
+            console.log('agaya 3')
+            document.getElementById('h1').style.color=color[2]
+        }
+        ,1400
+    )
+}
+
+else if(i == 3){
+    setInterval(
+        ()=>{
+            console.log('agaya 4')
+            document.getElementById('h1').style.color=color[3]
+        }
+        ,1600
+    )
+}
+
+
+else if(i == 4){
+    setInterval(
+        ()=>{
+            console.log('agaya 5')
+            document.getElementById('h1').style.color=color[4]
+        }
+        ,1800
+    )
+}
+
+ }
+ 
+ 
+
+
+        </script>
+</body>
+</html>
