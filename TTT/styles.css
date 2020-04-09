@@ -1,0 +1,186 @@
+body{
+    padding: 0px ;
+    margin: 0px ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/ttt.png);
+    /* background-repeat: no-repeat; */
+
+} 
+
+.h2-div{
+    background-color: rgba(0, 195, 255, 0.671);
+    box-shadow: 2px 2px 10px rgb(0, 128, 128);
+    margin-top: -29px; 
+}
+
+h2{
+    background-color: rgb(76, 37, 99);
+    overflow: hidden;
+    text-align: center ;
+    font-size: 34px ;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    padding: 10px;
+}
+
+#play{
+    float: right;
+    margin-top: -79px;
+    margin-right: 12px;
+    padding: 12px ;
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(46, 52, 54);
+    box-shadow: turquoise
+
+}
+
+#play:hover{
+    background-color: rgb(215, 216, 213);
+
+}
+
+.btn-div{
+    background-color: rgb(0, 128,128 );
+    width: 500px;
+    height: 500px;
+    border: 10px solid rgb(13, 6, 53);
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    border-radius: 13px 13px ;    
+}
+
+
+.playBox{
+    margin: 2px auto;
+    border-collapse: separate;
+}
+.box{
+    border: 5px solid whitesmoke;
+    /* font-family: hobo std; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(22, 24, 24); 
+    font-size: 75px;
+    transition-duration: 2s;
+    transition-delay: inherit;
+    cursor: pointer;
+    width: 20px;
+    height: 155px;
+    overflow: hidden;
+}
+
+.box:hover{
+    background-color: rgba(0, 0, 0, 0.438);
+}
+#box1{
+    border-top: none;
+    border-left: none;
+}
+#box2{
+    border-top: none;
+}
+#box3{
+    border-top: none;
+    border-right: none;
+}
+#box4{
+    border-left: none;
+}
+#box6{
+    border-right: none;
+}
+#box7{
+    border-bottom: none;
+    border-left: none;
+}
+#box8{
+    border-bottom: none;
+}
+#box9{
+    border-bottom: none;
+    border-right: none;
+}
+.playBox{
+    width: 99%;
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    -webkit-animation-name: fadeIn; 
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    font-weight: bolder;
+    word-spacing: 2px;
+}
+
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(76, 37, 99);
+    color: white;
+
+}
+.modal-body {padding: 2px 16px;}
+
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+#myBtn{
+    border-radius:25px;
+}
+#myBtn:hover{
+    background-color: blue ;
+    color: white ;
+}
